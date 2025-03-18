@@ -747,7 +747,7 @@ class AbstractContinuousWorld(ABC):
         Returns
         -------
         distances
-            the distance each ray extends sway from the origin, up to a max of
+            the distance each ray extends away from the origin, up to a max of
             `ray_distance`. Array will have shape `(n_rays,)`.
 
         """

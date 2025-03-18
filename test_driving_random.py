@@ -8,9 +8,11 @@ import time
 env = posggym.make(
     "DrivingContinuousRandom-v0",
     render_mode="human",
-    obstacle_density=0.2,  # Increase density for more obstacles
-    obstacle_radius_range=(0.2, 0.8),  # Vary the size of obstacles
-    random_seed=42,  # Set seed for reproducibility
+    obstacle_density=0.01,  # Increase density for more obstacles
+    obstacle_radius_range=(0.1, 0.3),  # Vary the size of obstacles
+    # random_seed=42,  # Set seed for reproducibility
+    obs_dist=10,
+    num_agents=1,
 )
 
 print(f"Environment created: {env}")

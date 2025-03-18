@@ -446,7 +446,7 @@ class DrivingContinuousModel(M.POSGModel[DState, DObs, DAction]):
         # Observes entity and distance to entity along a n_sensors rays from the agent
         # 0 to n_sensors = wall distance obs
         # n_sensors to (2 * n_sensors) = other vehicle dist
-        # Also observs angle, vx, vy, dest dx, desy dy
+        # Also observs angle, vx, vy, dest dx, dest dy
         self.sensor_obs_dim = self.n_sensors * 2
         self.obs_dim = self.sensor_obs_dim + 5
         sensor_low = [0.0] * self.sensor_obs_dim
